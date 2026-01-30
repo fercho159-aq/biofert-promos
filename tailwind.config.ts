@@ -8,13 +8,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        green: {
-          50: "#E8F5E9",
-          500: "#4CAF50",
-          600: "#388E3C",
+        brand: {
+          50: "#EFF6FF",
+          100: "#DBEAFE",
+          200: "#BFDBFE",
+          300: "#93C5FD",
+          400: "#60A5FA",
+          500: "#2563EB",
+          600: "#1D4ED8",
+          700: "#1E3A8A",
+          800: "#0E1555",
+          900: "#070B2E",
         },
-        blue: {
-          600: "#1E88E5",
+        accent: {
+          300: "#7DD8DF",
+          400: "#4EC3CD",
+          500: "#3AAFB8",
+          600: "#2A8F97",
         },
         gold: {
           400: "#D4A843",

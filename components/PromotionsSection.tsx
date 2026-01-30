@@ -31,10 +31,10 @@ const promotions = [
 
 export default function PromotionsSection() {
   return (
-    <section id="promociones" className="py-20 bg-gray-50">
+    <section id="promociones" className="py-20 bg-brand-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-brand-800 mb-4">
             Promociones
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
@@ -47,13 +47,13 @@ export default function PromotionsSection() {
           {promotions.map((promo) => (
             <div
               key={promo.title}
-              className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-100 relative"
+              className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 border border-brand-100 relative"
             >
               <span className="absolute top-4 right-4 bg-gold-400 text-white text-xs font-bold px-2.5 py-1 rounded-full">
                 {promo.badge}
               </span>
               <div className="text-4xl mb-4">{promo.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">
+              <h3 className="text-lg font-semibold text-brand-800 mb-2">
                 {promo.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">

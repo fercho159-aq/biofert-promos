@@ -63,7 +63,7 @@ export default function CalculatorSection() {
     <section id="calculadora" className="py-20 bg-white">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-brand-800 mb-4">
             Calculadora de Probabilidad
           </h2>
           <p className="text-gray-500 max-w-lg mx-auto">
@@ -72,7 +72,7 @@ export default function CalculatorSection() {
           </p>
         </div>
 
-        <div className="bg-gray-50 rounded-2xl border border-gray-100 p-6 sm:p-8">
+        <div className="bg-brand-50/50 rounded-2xl border border-brand-100 p-6 sm:p-8">
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="flex justify-between text-sm text-gray-500 mb-2">
@@ -81,9 +81,9 @@ export default function CalculatorSection() {
               </span>
               <span>{Math.round(progress)}%</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2">
+            <div className="w-full bg-brand-100 rounded-full h-2">
               <div
-                className="bg-green-500 h-2 rounded-full transition-all duration-500"
+                className="bg-brand-500 h-2 rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -92,7 +92,7 @@ export default function CalculatorSection() {
           {/* Step 0: Age */}
           {step === 0 && (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-700">
+              <h3 className="text-xl font-semibold text-brand-800">
                 ¿Cuál es tu rango de edad?
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -102,8 +102,8 @@ export default function CalculatorSection() {
                     onClick={() => setAge(option)}
                     className={`py-3 px-4 rounded-xl border-2 font-medium transition-all ${
                       age === option
-                        ? "border-green-500 bg-green-50 text-green-700"
-                        : "border-gray-200 bg-white text-gray-700 hover:border-green-300"
+                        ? "border-brand-500 bg-brand-50 text-brand-700"
+                        : "border-gray-200 bg-white text-gray-700 hover:border-brand-300"
                     }`}
                   >
                     {option}
@@ -116,7 +116,7 @@ export default function CalculatorSection() {
           {/* Step 1: Conditions */}
           {step === 1 && (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-700">
+              <h3 className="text-xl font-semibold text-brand-800">
                 ¿Tienes alguna de estas condiciones?
               </h3>
               <p className="text-sm text-gray-500">
@@ -129,8 +129,8 @@ export default function CalculatorSection() {
                     onClick={() => toggleCondition(option)}
                     className={`py-3 px-4 rounded-xl border-2 font-medium transition-all ${
                       conditions.includes(option)
-                        ? "border-green-500 bg-green-50 text-green-700"
-                        : "border-gray-200 bg-white text-gray-700 hover:border-green-300"
+                        ? "border-brand-500 bg-brand-50 text-brand-700"
+                        : "border-gray-200 bg-white text-gray-700 hover:border-brand-300"
                     }`}
                   >
                     {option}
@@ -143,7 +143,7 @@ export default function CalculatorSection() {
           {/* Step 2: Previous losses */}
           {step === 2 && (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-700">
+              <h3 className="text-xl font-semibold text-brand-800">
                 ¿Has tenido pérdidas gestacionales previas?
               </h3>
               <div className="grid grid-cols-2 gap-3">
@@ -153,8 +153,8 @@ export default function CalculatorSection() {
                     onClick={() => setLosses(option)}
                     className={`py-3 px-4 rounded-xl border-2 font-medium transition-all ${
                       losses === option
-                        ? "border-green-500 bg-green-50 text-green-700"
-                        : "border-gray-200 bg-white text-gray-700 hover:border-green-300"
+                        ? "border-brand-500 bg-brand-50 text-brand-700"
+                        : "border-gray-200 bg-white text-gray-700 hover:border-brand-300"
                     }`}
                   >
                     {option}
@@ -168,7 +168,7 @@ export default function CalculatorSection() {
           {step === 3 && (
             <div className="text-center space-y-6">
               <div className="text-5xl">🎉</div>
-              <h3 className="text-xl font-semibold text-gray-700">
+              <h3 className="text-xl font-semibold text-brand-800">
                 ¡Listo! Tenemos tu información
               </h3>
               <p className="text-gray-500 leading-relaxed">
@@ -176,19 +176,19 @@ export default function CalculatorSection() {
                 brindarte un diagnóstico personalizado. Haz clic en el botón
                 para enviarnos tus datos por WhatsApp y recibir orientación.
               </p>
-              <div className="bg-white rounded-xl border border-gray-200 p-4 text-left text-sm space-y-1">
+              <div className="bg-white rounded-xl border border-brand-100 p-4 text-left text-sm space-y-1">
                 <p>
-                  <span className="font-semibold text-gray-700">Edad:</span>{" "}
+                  <span className="font-semibold text-brand-800">Edad:</span>{" "}
                   {age}
                 </p>
                 <p>
-                  <span className="font-semibold text-gray-700">
+                  <span className="font-semibold text-brand-800">
                     Condiciones:
                   </span>{" "}
                   {conditions.join(", ")}
                 </p>
                 <p>
-                  <span className="font-semibold text-gray-700">
+                  <span className="font-semibold text-brand-800">
                     Pérdidas previas:
                   </span>{" "}
                   {losses}
@@ -198,13 +198,13 @@ export default function CalculatorSection() {
                 href={buildWhatsAppUrl(age, conditions, losses)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-green-500 hover:bg-green-600 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all"
+                className="inline-block bg-brand-500 hover:bg-brand-600 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
                 Enviar por WhatsApp
               </a>
               <button
                 onClick={reset}
-                className="block mx-auto text-sm text-gray-500 hover:text-gray-700 underline"
+                className="block mx-auto text-sm text-gray-500 hover:text-brand-600 underline"
               >
                 Volver a empezar
               </button>
@@ -217,14 +217,14 @@ export default function CalculatorSection() {
               <button
                 onClick={() => setStep((s) => s - 1)}
                 disabled={step === 0}
-                className="px-5 py-2.5 rounded-lg font-medium text-gray-500 hover:text-gray-700 disabled:opacity-0 transition-all"
+                className="px-5 py-2.5 rounded-lg font-medium text-gray-500 hover:text-brand-600 disabled:opacity-0 transition-all"
               >
                 Atrás
               </button>
               <button
                 onClick={() => setStep((s) => s + 1)}
                 disabled={!canAdvance()}
-                className="bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white px-6 py-2.5 rounded-lg font-medium transition-all"
+                className="bg-brand-500 hover:bg-brand-600 disabled:bg-gray-300 text-white px-6 py-2.5 rounded-lg font-medium transition-all"
               >
                 Siguiente
               </button>

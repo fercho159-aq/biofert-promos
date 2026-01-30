@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
+  { label: "Servicios", href: "#servicios" },
   { label: "Promociones", href: "#promociones" },
   { label: "Calculadora", href: "#calculadora" },
   { label: "Contacto", href: "#contacto" },
@@ -19,9 +20,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-green-600">Bio</span>
-            <span className="text-2xl font-bold text-blue-600">fert</span>
+          <a href="#inicio" className="flex items-center gap-1">
+            <span className="text-2xl font-bold text-brand-800">Bio</span>
+            <span className="text-2xl font-bold text-accent-400">fert</span>
           </a>
 
           {/* Desktop Links */}
@@ -30,7 +31,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-green-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-brand-500 transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -39,7 +40,7 @@ export default function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
               WhatsApp
             </a>
@@ -85,7 +86,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="block text-gray-700 hover:text-green-600 font-medium"
+                className="block text-gray-700 hover:text-brand-500 font-medium"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -95,7 +96,7 @@ export default function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-green-500 hover:bg-green-600 text-white text-center px-4 py-2 rounded-lg font-medium transition-colors"
+              className="block bg-brand-500 hover:bg-brand-600 text-white text-center px-4 py-2 rounded-lg font-medium transition-colors"
             >
               WhatsApp
             </a>

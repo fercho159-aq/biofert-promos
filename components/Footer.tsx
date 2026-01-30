@@ -3,16 +3,16 @@ const WHATSAPP_URL =
 
 export default function Footer() {
   return (
-    <footer id="contacto" className="bg-gray-700 text-white py-14">
+    <footer id="contacto" className="bg-brand-800 text-white py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl font-bold text-green-500">Bio</span>
-              <span className="text-2xl font-bold text-blue-400">fert</span>
+            <div className="flex items-center gap-1 mb-4">
+              <span className="text-2xl font-bold text-white">Bio</span>
+              <span className="text-2xl font-bold text-accent-400">fert</span>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-brand-200 text-sm leading-relaxed">
               Clínica de fertilidad con más de 3,000 familias formadas. Te
               acompañamos en cada paso de tu camino.
             </p>
@@ -21,11 +21,11 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-lg mb-4">Contacto</h4>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Tlacotalpan 36, Roma Sur, CDMX</li>
+            <ul className="space-y-2 text-brand-200 text-sm">
+              <li>Tlacotalpan 36, Roma Sur, Cuauhtémoc, CDMX. C.P. 06760</li>
               <li>
                 Tel:{" "}
-                <a href="tel:+525526401234" className="hover:text-white">
+                <a href="tel:+525526401234" className="hover:text-white transition-colors">
                   55 2640 1234
                 </a>
               </li>
@@ -34,7 +34,7 @@ export default function Footer() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white"
+                  className="hover:text-white transition-colors"
                 >
                   WhatsApp
                 </a>
@@ -49,7 +49,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600 hover:bg-green-600 transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-700 hover:bg-brand-500 transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -62,7 +62,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600 hover:bg-green-600 transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-700 hover:bg-brand-500 transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -75,7 +75,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="TikTok"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-600 hover:bg-green-600 transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-700 hover:bg-brand-500 transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-10 pt-8 border-t border-gray-600 text-center text-gray-400 text-xs leading-relaxed">
+        <div className="mt-10 pt-8 border-t border-brand-700 text-center text-brand-300 text-xs leading-relaxed">
           <p>
             La información proporcionada en este sitio web es con fines
             informativos únicamente y no constituye consejo médico. Consulta
