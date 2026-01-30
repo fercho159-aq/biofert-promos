@@ -11,9 +11,9 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <CalculatorSection />
         <ServicesSection />
         <PromotionsSection />
-        <CalculatorSection />
       </main>
       <Footer />
     </>
