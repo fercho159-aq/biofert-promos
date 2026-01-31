@@ -1,5 +1,5 @@
 const WHATSAPP_URL =
-  "https://wa.me/525526401234?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.";
+  "https://wa.me/5215529887336?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.";
 
 export default function Footer() {
   return (
@@ -25,8 +25,8 @@ export default function Footer() {
               <li>Tlacotalpan 36, Roma Sur, Cuauhtémoc, CDMX. C.P. 06760</li>
               <li>
                 Tel:{" "}
-                <a href="tel:+525526401234" className="hover:text-white transition-colors">
-                  55 2640 1234
+                <a href="tel:+5215529887336" className="hover:text-white transition-colors">
+                  55 2988 7336
                 </a>
               </li>
               <li>
@@ -36,7 +36,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  WhatsApp
+                  Agendar mi consulta por WhatsApp
                 </a>
               </li>
             </ul>

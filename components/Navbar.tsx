@@ -4,13 +4,13 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
   { label: "Promociones", href: "#promociones" },
+  { label: "Servicios", href: "#servicios" },
   { label: "Calculadora", href: "#calculadora" },
   { label: "Contacto", href: "#contacto" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/525526401234?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.";
+const WHATSAPP_URL = "https://wa.me/5215529887336?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
-              WhatsApp
+              Consulta $499
             </a>
           </div>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="block bg-brand-500 hover:bg-brand-600 text-white text-center px-4 py-2 rounded-lg font-medium transition-colors"
             >
-              WhatsApp
+              Agendar mi consulta
             </a>
           </div>
         </div>
