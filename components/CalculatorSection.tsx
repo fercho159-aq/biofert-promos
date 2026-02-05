@@ -58,18 +58,18 @@ function buildWhatsAppUrl(
   const conditionsText = conditions.length > 0 ? conditions.join(", ") : "Ninguna";
   const recommendation = getRecommendation(age, conditions, losses);
 
-  const message = `¡Hola! Soy *${name}* y acabo de realizar el diagnóstico en su página web.
+  const message = `Hola, soy ${name} y acabo de realizar el diagnóstico en su página web.
 
-📋 *MI PERFIL:*
-• Edad: ${age}
-• Condiciones: ${conditionsText}
-• Pérdidas previas: ${losses}
+MI PERFIL:
+- Edad: ${age}
+- Condiciones: ${conditionsText}
+- Pérdidas previas: ${losses}
 
-💊 *TRATAMIENTO RECOMENDADO:*
+TRATAMIENTO RECOMENDADO:
 ${recommendation.treatment}
 Precio: ${recommendation.price}
 
-Me gustaría agendar mi consulta de valoración. ¿Tienen disponibilidad?`;
+Me gustaría agendar mi consulta de valoración.`;
 
   return `https://wa.me/5215529887336?text=${encodeURIComponent(message)}`;
 }
