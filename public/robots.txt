@@ -1,0 +1,6 @@
+# Robots.txt for Biofert
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://biofert.com.mx/sitemap.xml
