@@ -87,7 +87,7 @@ export default function CalculatorSection() {
             Diagnóstico rápido
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-brand-800 mb-4">
-            Calculadora de Probabilidad
+            ¿Qué probabilidad tienes de embarazarte?
           </h2>
           <p className="text-gray-500 max-w-lg mx-auto">
             Responde 3 preguntas rápidas y recibe orientación personalizada

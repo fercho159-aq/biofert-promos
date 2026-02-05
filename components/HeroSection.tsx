@@ -46,7 +46,7 @@ export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center overflow-hidden bg-brand-900 pt-16"
+      className="relative min-h-screen flex items-center overflow-hidden bg-brand-900 pt-24"
     >
       {/* Background image with strong overlay for text readability */}
       <div className="absolute inset-0">
