@@ -202,6 +202,42 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
+        {/* Video Testimonials */}
+        <div className="mt-10">
+          <h3 className="text-xl font-bold text-brand-800 text-center mb-6">
+            Testimonios en video
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="rounded-xl overflow-hidden shadow-md bg-black">
+              <video
+                className="w-full aspect-[9/16] object-contain"
+                controls
+                preload="auto"
+                playsInline
+                src="/videos/testimonio1.mp4#t=0.1"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md bg-black">
+              <video
+                className="w-full aspect-[9/16] object-contain"
+                controls
+                preload="auto"
+                playsInline
+                src="/videos/testimonio2.mp4#t=0.1"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-md bg-black">
+              <video
+                className="w-full aspect-[9/16] object-contain"
+                controls
+                preload="auto"
+                playsInline
+                src="/videos/testimonio3.mp4#t=0.1"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Social proof counters */}
         <div className="bg-brand-500 rounded-xl py-6 px-6 mt-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center text-white">

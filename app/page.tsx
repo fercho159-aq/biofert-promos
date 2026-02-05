@@ -3,6 +3,7 @@ import StickyBar from "@/components/StickyBar";
 import HeroSection from "@/components/HeroSection";
 import PromotionsSection from "@/components/PromotionsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import GallerySection from "@/components/GallerySection";
 import ServicesSection from "@/components/ServicesSection";
 import CalculatorSection from "@/components/CalculatorSection";
 import MediaSection from "@/components/MediaSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSection />
         <PromotionsSection />
         <TestimonialsSection />
+        <GallerySection />
         <ServicesSection />
         <CalculatorSection />
         <MediaSection />
