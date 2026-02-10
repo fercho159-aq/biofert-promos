@@ -3,10 +3,11 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Promociones", href: "#promociones" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/#inicio" },
+  { label: "Promociones", href: "/#promociones" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 const WHATSAPP_URL = "https://wa.me/5215529887336?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta.";
@@ -94,7 +95,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
             {/* Logo */}
-            <a href="#inicio" aria-label="Biofert - Ir al inicio">
+            <a href="/" aria-label="Biofert - Ir al inicio">
               <img
                 src="/biofert.svg"
                 alt="Biofert"
@@ -120,7 +121,7 @@ export default function Navbar() {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="#calculadora"
+                href="/#calculadora"
                 className="text-pink-600 hover:text-pink-700 font-medium text-sm transition-colors py-2 px-3"
               >
                 Test de fertilidad
@@ -184,7 +185,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#calculadora"
+                href="/#calculadora"
                 onClick={() => setMenuOpen(false)}
                 className="block text-pink-600 font-medium py-3 min-h-[44px]"
               >
