@@ -70,7 +70,7 @@ const doctors = [
     role: "Director Médico y Fundador",
     credential: "Ced. Prof. 5765441 · Ced. Esp. 8790234",
     description:
-      "Certificado por el Consejo Mexicano de Ginecología con especialización en Biología de la Reproducción Humana. Más de 3,000 familias formadas bajo su dirección.",
+      "Certificado por el Consejo Mexicano de Ginecología con especialización en Biología de la Reproducción Humana. Más de 7,000 familias formadas bajo su dirección.",
     initials: "OL",
   },
   {
@@ -146,7 +146,7 @@ export default function ServicesSection() {
               Tu tratamiento en manos expertas
             </h3>
             <p className="text-gray-500 max-w-lg mx-auto">
-              Conoce al equipo que ha ayudado a más de 3,000 familias a cumplir
+              Conoce al equipo que ha ayudado a más de 7,000 familias a cumplir
               su sueño.
             </p>
           </div>

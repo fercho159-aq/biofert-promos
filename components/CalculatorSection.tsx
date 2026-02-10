@@ -32,16 +32,25 @@ const STEPS = [
 ];
 
 function getRecommendation(age: string, conditions: string[], losses: string) {
-  const needsFIV = age === "Más de 40" || conditions.includes("Endometriosis") ||
-                   !conditions.includes("Ninguna") || losses === "Sí";
+  const hasConditions = !conditions.includes("Ninguna") || conditions.includes("Endometriosis") || losses === "Sí";
+  const isOver40 = age === "Más de 40";
 
-  if (needsFIV) {
+  if (isOver40) {
+    return {
+      treatment: "Ovodonación (OVO)",
+      price: "$60,000 MXN",
+      description: "Dada tu edad, la ovodonación ofrece las tasas de éxito más altas. Agenda tu consulta de $499 para recibir un diagnóstico completo y plan de tratamiento personalizado."
+    };
+  }
+
+  if (hasConditions) {
     return {
       treatment: "Fertilización In Vitro (FIV)",
       price: "$49,900 MXN",
       description: "Tu caso requiere una valoración especializada. Agenda tu consulta de $499 para recibir un diagnóstico completo y plan de tratamiento."
     };
   }
+
   return {
     treatment: "Consulta de fertilidad + estudios",
     price: "$499 MXN",
@@ -330,7 +339,7 @@ export default function CalculatorSection() {
                           {recommendation.price.replace(" MXN", "")}
                         </span>
                         <span className="text-sm text-gray-400">MXN</span>
-                        {recommendation.price.includes("49,900") && (
+                        {(recommendation.price.includes("49,900") || recommendation.price.includes("60,000")) && (
                           <span className="text-xs bg-brand-100 text-brand-600 px-2 py-0.5 rounded-full font-semibold">
                             3 MSI disponibles
                           </span>

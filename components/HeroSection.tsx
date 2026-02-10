@@ -67,7 +67,7 @@ export default function HeroSection() {
           {/* Text content */}
           <div>
             <div className="inline-block bg-cyan-400/20 text-cyan-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-cyan-400/40">
-              + 3,000 familias formadas en 9 años
+              + 7,000 familias formadas en 18 años
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 drop-shadow-lg">
@@ -76,7 +76,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-200 max-w-xl mb-4 leading-relaxed">
-              Más de 3,000 familias formadas con los mejores costos en reproducción
+              Más de 7,000 familias formadas con los mejores costos en reproducción
               asistida. Incluye seminograma y estudio endovaginal en tu primera consulta.
             </p>
 
@@ -133,11 +133,11 @@ export default function HeroSection() {
             {/* Stats */}
             <div className="flex gap-8">
               <div>
-                <div className="text-3xl font-bold text-white">3,000+</div>
+                <div className="text-3xl font-bold text-white">7,000+</div>
                 <div className="text-sm text-gray-400">Casos de éxito</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">9+</div>
+                <div className="text-3xl font-bold text-white">18</div>
                 <div className="text-sm text-gray-400">
                   Años de experiencia
                 </div>

@@ -242,11 +242,11 @@ export default function TestimonialsSection() {
         <div className="bg-brand-500 rounded-xl py-6 px-6 mt-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center text-white">
             <div>
-              <div className="text-3xl sm:text-4xl font-extrabold">3,000+</div>
+              <div className="text-3xl sm:text-4xl font-extrabold">7,000+</div>
               <div className="text-brand-100 text-xs">familias formadas</div>
             </div>
             <div>
-              <div className="text-3xl sm:text-4xl font-extrabold">9+</div>
+              <div className="text-3xl sm:text-4xl font-extrabold">18</div>
               <div className="text-brand-100 text-xs">años de experiencia</div>
             </div>
             <div>

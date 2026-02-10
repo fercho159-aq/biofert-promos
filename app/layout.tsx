@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Biofert",
   },
   description:
-    "Clínica de fertilidad líder en Ciudad de México. Más de 3,000 familias formadas. Tratamientos de FIV, inseminación artificial y ovodonación. Consulta inicial desde $499 con seminograma incluido.",
+    "Clínica de fertilidad líder en Ciudad de México. Más de 7,000 familias formadas. Tratamientos de FIV, inseminación artificial y ovodonación. Consulta inicial desde $499 con seminograma incluido.",
   keywords: [
     "clínica de fertilidad",
     "fertilidad CDMX",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "Biofert",
     title: "Biofert - Clínica de Fertilidad en CDMX | Consulta desde $499",
     description:
-      "Clínica de fertilidad líder en Ciudad de México. Más de 3,000 familias formadas. Tratamientos de FIV, inseminación artificial y ovodonación.",
+      "Clínica de fertilidad líder en Ciudad de México. Más de 7,000 familias formadas. Tratamientos de FIV, inseminación artificial y ovodonación.",
     images: [
       {
         url: "/og-image.jpg",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     creator: "@Biofert_",
     title: "Biofert - Clínica de Fertilidad en CDMX",
     description:
-      "Más de 3,000 familias formadas. Consulta inicial desde $499 con seminograma incluido.",
+      "Más de 7,000 familias formadas. Consulta inicial desde $499 con seminograma incluido.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -113,7 +113,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "MedicalClinic",
               name: "Biofert",
-              description: "Clínica de fertilidad líder en Ciudad de México con más de 3,000 familias formadas.",
+              description: "Clínica de fertilidad líder en Ciudad de México con más de 7,000 familias formadas.",
               url: siteUrl,
               logo: `${siteUrl}/biofert.svg`,
               image: `${siteUrl}/og-image.jpg`,

@@ -11,8 +11,6 @@ const galleryImages = [
   { id: 5, src: "/images/gallery/5.jpg", alt: "Familia celebrando su nuevo bebé" },
   { id: 6, src: "/images/gallery/6.jpg", alt: "Padres orgullosos con su hijo" },
   { id: 7, src: "/images/gallery/7.jpg", alt: "Historia de éxito de fertilidad" },
-  { id: 8, src: "/images/gallery/8.jpg", alt: "Doctor con gemelos en consulta" },
-  { id: 9, src: "/images/gallery/9.jpg", alt: "Doctor sosteniendo bebé recién nacido" },
   { id: 10, src: "/images/gallery/10.jpg", alt: "Doctor con gemelas bebés" },
   { id: 11, src: "/images/gallery/11.jpg", alt: "Doctor con niños en la clínica" },
   { id: 12, src: "/images/gallery/12.jpg", alt: "Familia con gemelos recién nacidos" },
@@ -56,7 +54,7 @@ export default function GallerySection() {
             Historias de Éxito
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Más de 3,000 familias han cumplido su sueño de ser padres con nosotros
+            Más de 7,000 familias han cumplido su sueño de ser padres con nosotros
           </p>
         </div>
 

@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Clínica de fertilidad con más de 3,000 familias formadas. Te
+              Clínica de fertilidad con más de 7,000 familias formadas. Te
               acompañamos en cada paso de tu camino.
             </p>
           </div>
