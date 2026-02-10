@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogPost, getAllSlugs } from "@/lib/blog-data";
@@ -15,6 +16,8 @@ export function generateMetadata({
   const post = getBlogPost(params.slug);
   if (!post) return {};
 
+  const firstImage = post.content.find((s) => s.type === "image");
+
   return {
     title: post.title,
     description: post.excerpt,
@@ -24,6 +27,9 @@ export function generateMetadata({
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
+      ...(firstImage?.src && {
+        images: [{ url: firstImage.src, width: 1200, height: 630, alt: firstImage.alt || post.title }],
+      }),
     },
   };
 }
@@ -124,6 +130,21 @@ export default function BlogPostPage({
                   >
                     {section.text}
                   </h2>
+                );
+              }
+
+              if (section.type === "image" && section.src) {
+                return (
+                  <div key={i} className="my-8 rounded-2xl overflow-hidden shadow-md">
+                    <Image
+                      src={section.src}
+                      alt={section.alt || ""}
+                      width={800}
+                      height={450}
+                      className="w-full h-auto object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
                 );
               }
 

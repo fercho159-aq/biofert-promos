@@ -11,11 +11,13 @@ export interface BlogPost {
 }
 
 export interface BlogSection {
-  type: "paragraph" | "heading" | "list" | "cta";
+  type: "paragraph" | "heading" | "list" | "cta" | "image";
   text?: string;
   items?: { title: string; description: string }[];
   ctaText?: string;
   ctaDescription?: string;
+  src?: string;
+  alt?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -33,6 +35,11 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         text: "Lograr un embarazo parece algo natural, pero para muchas parejas es un camino lleno de desafíos. Si llevas más de 12 meses intentándolo (o 6 meses si eres mayor de 35 años) sin éxito, es momento de evaluar las causas. Es vital recordar que la infertilidad no es culpa de nadie y que las causas se distribuyen casi equitativamente entre hombres y mujeres.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/pareja-prueba-embarazo.png",
+        alt: "Pareja buscando embarazo consultando causas de infertilidad",
       },
       {
         type: "heading",
@@ -68,6 +75,11 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
+        type: "image",
+        src: "/images/blog/consulta-fertilidad-femenina.png",
+        alt: "Consulta ginecológica para evaluar fertilidad femenina en CDMX",
+      },
+      {
         type: "heading",
         text: "Principales causas de infertilidad en el hombre",
       },
@@ -99,6 +111,11 @@ export const blogPosts: BlogPost[] = [
               "El tabaquismo, el consumo excesivo de alcohol y la exposición a ciertos químicos pueden reducir drásticamente la fertilidad masculina.",
           },
         ],
+      },
+      {
+        type: "image",
+        src: "/images/blog/analisis-fertilidad-masculina.png",
+        alt: "Análisis de espermatobioscopía y fertilidad masculina",
       },
       {
         type: "heading",
